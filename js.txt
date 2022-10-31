@@ -1,0 +1,82 @@
+1. Arrow function
+const <function name> = (<variables>) => <return>
+
+2. let, const, var
+
+3. Destructuring
+
+Ex1:
+
+var array = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Java']
+var [a, , c] = array
+console.log(a,c) #JavaScript Ruby
+
+Ex2:
+
+var object = {
+    name:"JavaScript",
+    price:1000,
+    image:"image-address"
+    children:{
+        name:'ReactJS"
+    }
+}
+
+var {name, price, image} = object #var name is equal to object name
+var {name: parentName, children:{name}}
+
+4. Rest parameters
+
+Ex1:
+var array = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Java']
+var [a, ...rest] = array
+console.log(rest) #['PHP', 'Ruby', 'Python', 'Java']
+
+#Rest in object is same as Rest in array.
+
+Ex2:
+
+function logger(...params) {
+    console.log(params)
+}
+console.log(logger(1,2,3,4,5))
+
+5. Spread
+
+
+6. import/ export
+
+7. 
+
+
+
+
+REGULAR EXPRESSIONS
+
+1. Test
+
+Ex:
+
+let string_one = "Hello World"
+let check_string = /Hello/; #Regex
+let result = string_one.test(check_string) #Return true
+
+
+Regex: |:or
+Ex:
+let check_string = /Hello|World/; 
+
+Regex: /<string>/i
+Ex:
+let check_string = /hello/i; #Return true (hellO, heLLo, ...)
+
+Regex: /<string>/g
+g: global
+
+2. match
+
+Ex:
+"Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
