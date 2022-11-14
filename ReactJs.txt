@@ -1,0 +1,48 @@
+DOM ---->Root element<html> --->element <head> ---> element <title> ---> Text: "My title"
+                            --->element <body> ---> element <h1>    ---> Text: "My header"
+                                                --> element <a> ----> Attribute: "href"
+                                                                ----> Text: "My link"
+
+1.  document.createElement()    #create ----> DOM Element
+2.  document.querySelector()    #find
+3.  document.getElementById()   #findById
+4.  document.body               #bodyOfHtml
+5.  innerText, id, className, style
+6.  Object.assign(<name>.style, {
+    color: ....,
+    backgroundColor: ....,
+})
+
+
+ReactJS
+1.  React.createElement(type, props, children, n) ----> React element
+EX:
+    <script>
+
+        //DOM
+        const H1DOM = document.createElement('h1')
+
+        h1DOM.title = 'Hello'
+        h1DOM.className = 'heading'
+        h1DOM.inner = "Hello Guys!"
+
+        document.body.appendChild(h1DOM)
+
+        // React ->DOM
+
+        const h1React = React.createElement('h1', {
+            title: 'Hello',
+            className: 'heading',
+        }, 'Hello guys!')
+
+    </script>
+
+
+
+
+
+
+
+
+REACT-DOM
+1. ReactDom.render(<tags>, document.get)

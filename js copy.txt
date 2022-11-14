@@ -1,0 +1,194 @@
+1. Arrow function
+const <function name> = (<variables>) => <return>
+
+2. let, const, var
+
+3. Destructuring
+
+Ex1:
+
+var array = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Java']
+var [a, , c] = array
+console.log(a,c) #JavaScript Ruby
+
+Ex2:
+
+var object = {
+    name:"JavaScript",
+    price:1000,
+    image:"image-address"
+    children:{
+        name:'ReactJS"
+    }
+}
+
+var {name, price, image} = object #var name is equal to object name
+var {name: parentName, children:{name}}
+
+4. Rest parameters (...)
+
+Ex1:
+var array = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Java']
+var [a, ...rest] = array
+console.log(rest) #['PHP', 'Ruby', 'Python', 'Java']
+
+#Rest in object is same as Rest in array.
+
+Ex2:
+
+function logger(...params) {
+    console.log(params)
+}
+console.log(logger(1,2,3,4,5))
+
+5. Spread (...)
+Ex1:
+#Array + Array
+var array1 = ["JavaScript", "Ruby", "PHP"]
+var array2 = ["ReactJS", "Dart"]
+var array3 = [...array1, ...array2]
+
+Ex2:
+#Obj + Obj
+
+var obj1 = {
+    name:"JavaScript"
+}
+
+var obj2 = {
+    price: 1000
+}
+
+var obj3 = {
+    ...obj1,
+    ...obj2
+}
+
+
+6. Modules:import/ export
+file import: import logger from "./logger.js"
+file export: export default logger
+
+Ex:
+
+import * as <name> from "./"
+
+
+
+
+
+REGULAR EXPRESSIONS
+
+1. Test
+
+Ex:
+
+let string_one = "Hello World"
+let check_string = /Hello/; #Regex
+let result = check_string.test(string_one) #Return true
+
+
+Regex: |:or
+Ex:
+let check_string = /Hello|World/; 
+
+Regex: /<string>/i
+Ex:
+let check_string = /hello/i; #Return true (hellO, heLLo, ...)
+
+Regex: /<string>/g
+g: global
+
+Regex: /.<string>/
+Ex:
+let check_string = /.un/
+#run hun pun is true
+
+Regex:/<string>$>
+Ex:
+let check_string = /run$/
+#"he and run" or "hedfadasd run" true
+
+Regex: \w = [a-zA-Z0-9_]
+Regex: \W = [^a-zA-Z0-9]
+Regex: \d = [0-9]
+Regex: \D = [^0-9]
+
+2. match
+
+Ex:
+"Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
+
+
+
+DEBUG
+1.console
+
+console.log()
+console.clear()
+
+2. typeof
+
+typeof
+
+3. \
+if you want to print: I'm a hunter
+console.log("I\'m a hunter")
+
+BASIC STRUCTURE
+1. unshift/ shift
+Ex:
+let arr = [1,2,3,4]
+arr.unshift("hello", "hi") #arr=["hello", "hi", 1, 2, 3, 4]
+arr.shift() #arr = ["hi", 1, 2, 3, 4]
+
+2. push/ pop
+Ex:
+let arr = [1, 2, 3, 4]
+arr.push(5) #arr = [1,2,3,4,5]
+arr.pop() #arr = [1,2,3,4]
+
+3. splice
+Ex:
+let arr = [1,2,3,4,5]
+let new_arr = arr.splice(1,2) #new_arr = [2,3] arr = [1,4,5]
+
+
+4. slice
+
+Ex:
+let arr = [1,2,3,4,5]
+let new_arr = arr.slice(1,2) #new_arr = [2] arr = [1,2,3,4,5]
+
+5.indexOf
+index of array
+Ex:
+let arr = [1,2,3,4,5,6]
+let index = arr.indexOf(6) => 5
+let index = arr.indexOf(7) => -1
+
+
+
+
+PACKAGE.JSON
+1.  name
+2.  version
+3.  license
+4.  description
+5.  keywords
+6.  main
+7.  repository
+8.  script
+9.  dependencies
+10. devDependencies
+
+
+
+PACKAGE LOCK JSON
+
+
+
+
