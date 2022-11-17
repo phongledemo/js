@@ -46,3 +46,23 @@ EX:
 
 REACT-DOM
 1. ReactDom.render(<tags>, document.get)
+
+
+Function component and React component
+* Function component:
+
+function <name>() {
+    return (
+        <html>
+    )
+}
+
+
+
+Props:
+* React Element: các thẻ html
+- For in label: => htmlFor
+Example: <label htmlFor="email"></label> <input id="email" />
+- class => className
+* React component: function <name>
+
